@@ -19,6 +19,8 @@ const Header = () => {
             <a href="#">
               <span className="sr-only">Panda Steeze</span>
               <Image
+                width={100}
+                height={100}
                 className="h-8 w-auto sm:h-10"
                 src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
                 alt=""
@@ -86,6 +88,8 @@ const Header = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <Image
+                    width={100}
+                    height={100}
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
                     alt="Panda Steeze"
