@@ -9,7 +9,7 @@ const defaultMeta = {
   type: 'website',
   robots: 'follow, index',
   image:
-    'https://res.cloudinary.com/dcmvndqd1/image/upload/v1673864909/Personal/Y6PXudlZ_400x400_aw3xuc.jpg',
+    'https://res.cloudinary.com/dcmvndqd1/image/upload/v1674046971/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.53.41-removebg-preview_uwa6vl.png',
 };
 
 type SeoProps = {
@@ -69,7 +69,7 @@ export default function Seo(props: SeoProps) {
           <meta
             name="author"
             property="article:author"
-            content="Theodorus Clarence"
+            content="Biruk Endris"
           />
         </>
       )}
