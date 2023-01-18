@@ -4,14 +4,58 @@ import Product from './Product';
 const products = [
   {
     id: 1,
-    name: 'Machined Pen',
+    name: 'Panda t-shirt 1',
     color: 'Black',
     price: '$35',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg',
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
+      'https://res.cloudinary.com/dcmvndqd1/image/upload/v1674040154/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.53.40_iodmml.jpg',
+    imageAlt: 'Panda t-shirt image alternative',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#FDE68A' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+  {
+    id: 1,
+    name: 'Panda t-shirt 1',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc:
+      'https://res.cloudinary.com/dcmvndqd1/image/upload/v1674040154/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.53.41_xayapo.jpg',
+    imageAlt: 'Panda t-shirt image alternative',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#FDE68A' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+  {
+    id: 1,
+    name: 'Panda t-shirt 1',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc:
+      'https://res.cloudinary.com/dcmvndqd1/image/upload/v1674040156/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.45.33_rbw3ib.jpg',
+    imageAlt: 'Panda t-shirt image alternative',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#FDE68A' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+  {
+    id: 1,
+    name: 'Panda t-shirt 1',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc:
+      'https://res.cloudinary.com/dcmvndqd1/image/upload/v1674040154/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.53.40_iodmml.jpg',
+    imageAlt: 'Panda t-shirt image alternative',
     availableColors: [
       { name: 'Black', colorBg: '#111827' },
       { name: 'Brass', colorBg: '#FDE68A' },
