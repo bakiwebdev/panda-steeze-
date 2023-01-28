@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { recentCategory, selectCategory } from '../slices/CategorySlice';
 
-// eslint-disable-next-line react/prop-types
-function SideCategory({ typesData }) {
+interface SideCategoryProps {
+  typesData: string[];
+}
+function SideCategory({ typesData }: SideCategoryProps) {
   const dispatch = useDispatch();
   const data = useSelector(recentCategory);
   const [recent, setRecent] = useState();
@@ -22,9 +24,8 @@ function SideCategory({ typesData }) {
             All products
           </button>
         </li>
-        {/* eslint-disable-next-line react/prop-types */}
         {typesData.map((type, idx) => (
-          <li key={type.idx}>
+          <li key={type}>
             <button
               className={`${
                 recent == type ? `font-semibold text-cusblack` : ``

@@ -12,7 +12,7 @@ export async function getStaticProps() {
   const resTypes = await fetch(process.env.NEXT_PUBLIC_APIURL + '/items/type');
   const dataTypes: string[] = await resTypes.json();
   const resItems = await fetch(process.env.NEXT_PUBLIC_APIURL + `/items`);
-  const dataItems: any = await resItems.json();
+  const dataItems: Product[] = await resItems.json();
 
   return {
     props: {
@@ -26,30 +26,30 @@ export async function getStaticProps() {
 
 interface CategoryProps {
   data: Product;
-  dataItems: object[];
+  dataItems: Product[];
   dataTypes: string[];
 }
 
 function Category({ data, dataItems, dataTypes }: CategoryProps) {
   const [sort, setSort] = useState(0);
   const recent_category = useSelector(recentCategory);
-  const data_items = dataItems
-    .filter((item) => {
-      if (recent_category.length > 0) {
-        return item.type.name == recent_category;
-      } else {
-        return true;
-      }
-    })
-    .sort((a, b) => {
-      if (sort === 1) {
-        return a.price - b.price;
-      }
-      if (sort === 2) {
-        return b.price - a.price;
-      }
-      return true;
-    });
+  const data_items = dataItems;
+  // .filter((item) => {
+  //   if (recent_category.length > 0) {
+  //     return item.type.name == recent_category;
+  //   } else {
+  //     return true;
+  //   }
+  // })
+  // .sort((a, b) => {
+  //   if (sort === 1) {
+  //     return a.price - b.price;
+  //   }
+  //   if (sort === 2) {
+  //     return b.price - a.price;
+  //   }
+  //   return true;
+  // });
 
   const [loading, setLoading] = useState(true);
 

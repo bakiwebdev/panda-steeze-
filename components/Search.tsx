@@ -5,7 +5,7 @@ import Router from 'next/router';
 function Search() {
   const [input, setInput] = useState('');
   const [data, setData] = useState([]);
-  const handleChange = async (e:any) => {
+  const handleChange = async (e: any) => {
     // setInput(e.target.value);
     // const res = await fetch(
     //   `${process.env.NEXT_PUBLIC_APIURL}/items?name_contains=${input}`
@@ -28,20 +28,20 @@ function Search() {
             .map((item, idx) => (
               <div
                 key={idx}
-                onClick={() => Router.push('/product/' + item.slug)}
+                // onClick={() => Router.push('/product/' + item.slug)}
               >
                 <div
                   key={idx}
                   className="p-2 flex place-items-center cursor-pointer text-xs font-light text-cusblack hover:bg-gray-100 active:bg-gray-200"
                 >
                   <span>
-                    <img
+                    {/* <img
                       src={item.prop[0].image[0]}
                       className="w-7 h-7 mr-1 rounded-lg"
                       alt=""
-                    />
+                    /> */}
                   </span>
-                  {item.name}
+                  {/* {item.name} */}
                 </div>
               </div>
             ))

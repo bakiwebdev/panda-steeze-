@@ -1,10 +1,12 @@
+import { NextApiRequest } from 'next';
+
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-export default async (req, res) => {
+export default async (req: NextApiRequest, res: any) => {
   const { items, email } = req.body;
 
-  const transformedItems = items.map((item) => ({
+  const transformedItems = items.map((item: any) => ({
     description: `${item.name} - ${item.selectedSizeProp}`,
     quantity: item.quantity,
     price_data: {
@@ -29,7 +31,7 @@ export default async (req, res) => {
     cancel_url: `${process.env.HOST}/basket`,
     metadata: {
       email,
-      images: JSON.stringify(items.map((item) => item.prop[0].image[0])),
+      images: JSON.stringify(items.map((item: any) => item.prop[0].image[0])),
     },
   });
 

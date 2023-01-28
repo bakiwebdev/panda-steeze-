@@ -6,6 +6,8 @@
 .yarn
 .pnp.js
 
+# dummy pages
+
 # testing
 /coverage
 

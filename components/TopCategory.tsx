@@ -4,7 +4,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/dist/client/router';
 import Search from './Search';
 
-function TopCategory({ categories }) {
+interface TopCategoryProps {
+  categories: any;
+}
+
+function TopCategory({ categories }: TopCategoryProps) {
   const { asPath } = useRouter();
   useEffect(() => {
     setIsActive(asPath);
@@ -26,7 +30,7 @@ function TopCategory({ categories }) {
               All items
             </button>
           </Link>
-          {categories.map((cat, idx) => (
+          {categories.map((cat: any, idx: any) => (
             <Link key={idx} href={`/shop/${cat}`}>
               <button
                 className={`${

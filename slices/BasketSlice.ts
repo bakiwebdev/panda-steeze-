@@ -1,16 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   items: [],
 };
 
-export const addItemToCart = (cartItems, cartItemToAdd) => {
+export const addItemToCart = (cartItems: any, cartItemToAdd: any) => {
   const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === cartItemToAdd.id
+    (cartItem: any) => cartItem.id === cartItemToAdd.id
   );
 
   if (existingCartItem) {
-    return cartItems.map((cartItem) =>
+    return cartItems.map((cartItem: any) =>
       cartItem.id === cartItemToAdd.id
         ? { ...cartItem, quantity: cartItem.quantity + 1 }
         : cartItem
@@ -23,22 +24,22 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
 export const basketSlice = createSlice({
   name: 'basket',
   initialState,
-  hydrate: (state, action) => {
-    // do not do state = action.payload it will not update the store
-    return action.payload;
-  },
+  // hydrate: (state: any, action: any) => {
+  //   // do not do state = action.payload it will not update the store
+  //   return action.payload;
+  // },
   reducers: {
     addToBasket: (state, action) => {
       state.items = addItemToCart(state.items, action.payload);
     },
     removeFromBasket: (state, action) => {
-      state.items = state.items.filter((item) => item.id !== action.payload.id);
+      state.items = state.items.filter((item) => item !== action.payload.id);
     },
     plusItem: (state, action) => {
-      [...state.items, (state.items[action.payload].quantity += 1)];
+      // [...state.items, (state.items[action.payload].quantity += 1)];
     },
     minusItem: (state, action) => {
-      [...state.items, (state.items[action.payload].quantity -= 1)];
+      // [...state.items, (state.items[action.payload]?.quantity -= 1)];
     },
     deleteFromBasket: (state, action) => {
       state.items = [];
@@ -55,6 +56,6 @@ export const {
 } = basketSlice.actions;
 
 // Selectors - This is how we pull information from the Global store slice
-export const selectItems = (state) => state.basket.items;
+export const selectItems = (state: any) => state.basket.items;
 
 export default basketSlice.reducer;

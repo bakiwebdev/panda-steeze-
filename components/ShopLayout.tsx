@@ -5,7 +5,14 @@ import ShopCarousel from './ShopCarousel';
 import SideCategory from './SideCategory';
 import TopCategory from './TopCategory';
 
-function Layout({ children, categories, types, setSort }) {
+interface LayoutProps {
+  children: any;
+  categories: any;
+  types: any;
+  setSort: any;
+}
+
+function Layout({ children, categories, types, setSort }: LayoutProps) {
   const [open, setOpen] = useState(false);
   const [grid, setGrid] = useState(4);
   const [sortOpen, setSortOpen] = useState(false);

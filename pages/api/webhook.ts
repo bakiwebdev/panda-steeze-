@@ -1,3 +1,4 @@
+import { NextApiRequest, NextApiResponse } from 'next';
 import { buffer } from 'micro';
 import * as admin from 'firebase-admin';
 
@@ -18,7 +19,7 @@ const serviceAccount = {
 
 const app = !admin.apps.length
   ? admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
+      // credential: admin.credential.cert(serviceAccount),
     })
   : admin.app();
 
@@ -27,11 +28,11 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 
-const fulfillOrder = async (session) => {
+const fulfillOrder = async (session: any) => {
   return app
     .firestore()
     .collection('users')
-    .doc(session.metadata.email)
+    .doc(session?.metadata.email)
     .collection('orders')
     .doc(session.id)
     .set({
@@ -40,9 +41,9 @@ const fulfillOrder = async (session) => {
       images: JSON.parse(session.metadata.images),
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
     })
-    .then(console.log(`Order Success ${session.id}`));
+    .then(() => console.log(`Order Success ${session.id}`));
 };
-export default async (req, res) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     const requestBuffer = await buffer(req);
     const payload = requestBuffer.toString();
