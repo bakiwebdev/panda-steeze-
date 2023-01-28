@@ -22,6 +22,7 @@ const app = !admin.apps.length
     })
   : admin.app();
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const endpointSecret = process.env.STRIPE_SIGNING_SECRET;

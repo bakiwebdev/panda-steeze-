@@ -10,9 +10,9 @@ export async function getStaticProps() {
   const res = await fetch(process.env.NEXT_PUBLIC_APIURL + '/items/category');
   const data: Product = await res.json();
   const resTypes = await fetch(process.env.NEXT_PUBLIC_APIURL + '/items/type');
-  const dataTypes = await resTypes.json();
+  const dataTypes: string[] = await resTypes.json();
   const resItems = await fetch(process.env.NEXT_PUBLIC_APIURL + `/items`);
-  const dataItems = await resItems.json();
+  const dataItems: any = await resItems.json();
 
   return {
     props: {
@@ -24,12 +24,13 @@ export async function getStaticProps() {
   };
 }
 
-// interface CategoryProps {
-//   data: Product
-//   dataItems:
-// }
+interface CategoryProps {
+  data: Product;
+  dataItems: object[];
+  dataTypes: string[];
+}
 
-function Category({ data, dataItems, dataTypes }) {
+function Category({ data, dataItems, dataTypes }: CategoryProps) {
   const [sort, setSort] = useState(0);
   const recent_category = useSelector(recentCategory);
   const data_items = dataItems

@@ -2,7 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-function MenuNav({ handleOpen, isOpen }) {
+interface MenuNavProps {
+  handleOpen: () => void;
+  isOpen: boolean;
+}
+
+function MenuNav({ handleOpen, isOpen }: MenuNavProps) {
   if (!isOpen) return <div></div>;
   return (
     <motion.div

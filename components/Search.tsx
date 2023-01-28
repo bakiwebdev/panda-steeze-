@@ -26,7 +26,10 @@ function Search() {
           data
             .filter((i, idx) => idx < 4)
             .map((item, idx) => (
-              <div onClick={() => Router.push('/product/' + item.slug)}>
+              <div
+                key={idx}
+                onClick={() => Router.push('/product/' + item.slug)}
+              >
                 <div
                   key={idx}
                   className="p-2 flex place-items-center cursor-pointer text-xs font-light text-cusblack hover:bg-gray-100 active:bg-gray-200"

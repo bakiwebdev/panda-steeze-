@@ -8,12 +8,13 @@ import 'nprogress/nprogress.css';
 import Router from 'next/router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { AppProps } from 'next/app';
 NProgress.configure({ showSpinner: false });
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AnimatePresence>
       <Provider store={store}>

@@ -1,20 +1,3 @@
-/*
-  This ProductDetail  requires Tailwind CSS v2.0+ 
-  
-  This ProductDetail  requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 import { useState } from 'react';
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react';
 import { StarIcon } from '@heroicons/react/20/solid';
@@ -70,7 +53,7 @@ function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function ProductDetail () {
+export default function ProductDetail() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
 
   return (
