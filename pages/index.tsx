@@ -1,15 +1,13 @@
-import Banner from '../components/Banner';
-import Layout from '../components/Layout';
+import Hero from '../components/Hero';
 import Seo from '../components/SEO';
 import Trending from '../components/Trending';
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <Seo />
-      <Banner />
+      <Hero />
       <Trending />
-      <div className="bg-gray-50 h-screen"></div>
-    </Layout>
+    </>
   );
 }
