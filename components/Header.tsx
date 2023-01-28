@@ -31,7 +31,7 @@ function Header() {
   useEffect(() => {
     const dataCookie = nookies.get();
     try {
-      setItems(data);
+      setItems(data ? data : []);
       setWish(dataWish);
       setCookie(JSON.parse(dataCookie.user));
     } catch (err) {
@@ -142,7 +142,7 @@ function Header() {
                 className={`flex
                 } absolute text-xs font-light justify-center text-white text-center w-4 h-4 bg-cusblack rounded-full bottom-0 right-0`}
               >
-                {items.reduce((a, item) => a + item.quantity, 0)}
+                {/* {items.reduce((a, item) => a + item?.quantity, 0)} */}0
               </div>
             ) : (
               ''
@@ -196,8 +196,8 @@ function Header() {
                 {cookie && (
                   <div className="bg-cusblack text-white p-3 rounded-lg">
                     <ul className="text-left w-28">
-                      <li className="line-clamp-1">{cookie.username}</li>
-                      <li className="line-clamp-1">{cookie.email}</li>
+                      {/* <li className="line-clamp-1">{cookie.username}</li>
+                      <li className="line-clamp-1">{cookie.email}</li> */}
                     </ul>
                   </div>
                 )}

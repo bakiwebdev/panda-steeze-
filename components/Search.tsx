@@ -5,13 +5,13 @@ import Router from 'next/router';
 function Search() {
   const [input, setInput] = useState('');
   const [data, setData] = useState([]);
-  const handleChange = async (e) => {
-    setInput(e.target.value);
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_APIURL}/items?name_contains=${input}`
-    );
-    const data = await res.json();
-    setData(data);
+  const handleChange = async (e:any) => {
+    // setInput(e.target.value);
+    // const res = await fetch(
+    //   `${process.env.NEXT_PUBLIC_APIURL}/items?name_contains=${input}`
+    // );
+    // const data = await res.json();
+    // setData(data);
   };
   return (
     <div className="flex relative group md:ml-auto justify-between pr-4 place-items-center flex-grow h-full rounded-3xl bg-white">
