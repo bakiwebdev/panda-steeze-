@@ -1,3 +1,4 @@
+import { server } from '../config';
 import Link from 'next/link';
 import ProductCard from './ProductCard';
 import { useEffect, useState } from 'react';
@@ -7,7 +8,7 @@ const Trending = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   useEffect(() => {
-    fetch(process.env.NEXT_PUBLIC_APIURL + '/items/trending')
+    fetch(`${server}/api/items/trending`)
       .then((res) => {
         return res.json();
       })

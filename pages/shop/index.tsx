@@ -1,3 +1,4 @@
+import { server } from '../../config';
 import React, { useEffect, useState } from 'react';
 // import CardSkeleton from '../../components/CardSkeleton';
 import ShopLayout from '../../components/ShopLayout';
@@ -7,11 +8,11 @@ import Seo from '../../components/SEO';
 import ProductCard from '../../components/ProductCard';
 
 export async function getStaticProps() {
-  const res = await fetch(process.env.NEXT_PUBLIC_APIURL + '/items/category');
+  const res = await fetch(`${server}/api/items/category`);
   const data: Product = await res.json();
-  const resTypes = await fetch(process.env.NEXT_PUBLIC_APIURL + '/items/type');
+  const resTypes = await fetch(`${server}/api/items/type`);
   const dataTypes: string[] = await resTypes.json();
-  const resItems = await fetch(process.env.NEXT_PUBLIC_APIURL + `/items`);
+  const resItems = await fetch(`${server}/api/items`);
   const dataItems: Product[] = await resItems.json();
 
   return {
