@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CardSkeleton from '../../components/CardSkeleton';
+// import CardSkeleton from '../../components/CardSkeleton';
 import ShopLayout from '../../components/ShopLayout';
 import { useSelector } from 'react-redux';
 import { recentCategory } from '../../slices/CategorySlice';
@@ -25,12 +25,13 @@ export async function getStaticProps() {
 }
 
 interface CategoryProps {
-  data: Product;
+  data: string[];
   dataItems: Product[];
   dataTypes: string[];
 }
 
 function Category({ data, dataItems, dataTypes }: CategoryProps) {
+  // console.log(data, dataItems, dataTypes);
   const [sort, setSort] = useState(0);
   const recent_category = useSelector(recentCategory);
   const data_items = dataItems;
@@ -61,8 +62,8 @@ function Category({ data, dataItems, dataTypes }: CategoryProps) {
     <>
       <Seo />
       <ShopLayout categories={data} setSort={setSort} types={dataTypes}>
-        {!loading ? (
-          data_items.length < 1 ? (
+        {!loading &&
+          (data_items.length < 1 ? (
             <p className="col-span-full mx-auto text-sm text-gray-400">
               No item found
             </p>
@@ -70,16 +71,16 @@ function Category({ data, dataItems, dataTypes }: CategoryProps) {
             data_items.map((item: Product) => (
               <ProductCard key={item.slug} item={item} />
             ))
-          )
-        ) : (
-          <>
-            <CardSkeleton />
-            <CardSkeleton />
-            <CardSkeleton />
-            <CardSkeleton />
-            <CardSkeleton />
-          </>
-        )}
+          ))}
+        {/* // ) : (
+        //   <>
+        //     <CardSkeleton />
+        //     <CardSkeleton />
+        //     <CardSkeleton />
+        //     <CardSkeleton />
+        //     <CardSkeleton />
+        //   </>
+        // )} */}
       </ShopLayout>
     </>
   );
