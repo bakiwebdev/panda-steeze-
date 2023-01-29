@@ -69,7 +69,7 @@ const Hero = () => {
               height={500}
               className="h-screen object-cover w-full"
               loading="lazy"
-              src="https://i.ibb.co/pffTtVv/https-hypebeast-com-image-2018-12-these-are-the-best-sneakers-of-2018-005.jpg"
+              src="https://res.cloudinary.com/dcmvndqd1/image/upload/v1675032696/Panda%20Steeze/1fe17b0e9fb5b039a076deb19b229462_jv8rkk.jpg"
             />
           </div>
           <div>
@@ -79,7 +79,7 @@ const Hero = () => {
               height={500}
               className="h-screen object-cover w-full"
               loading="lazy"
-              src="https://i.ibb.co/4YskC1T/c095795f992f84b92b16c65b93ecb5f5.jpg"
+              src="https://res.cloudinary.com/dcmvndqd1/image/upload/v1675032696/Panda%20Steeze/dec58d29e7f8bb9c383e2b8421d320b7_kh0yco.jpg"
             />
           </div>
           <div>
@@ -89,7 +89,7 @@ const Hero = () => {
               height={500}
               className="h-screen object-cover w-full"
               loading="lazy"
-              src="https://i.ibb.co/bvvFBPt/R.jpg"
+              src="https://res.cloudinary.com/dcmvndqd1/image/upload/v1675032697/Panda%20Steeze/fe41b5173f7e6713662534467fc930ce_vnfa99.jpg"
             />
           </div>
         </Carousel>

@@ -1,599 +1,617 @@
 [{
-        "_id": "61190d98cd0bde22e8960771",
-        "name": "Adidas Superstar 20s",
-        "slug": "adidas-superstar-20s",
-        "price": "$35",
-        "published_at": "2021-08-15T12:50:35.569Z",
-        "createdAt": "2021-08-15T12:50:32.330Z",
-        "updatedAt": "2021-08-17T23:49:55.279Z",
+        "_id": "61190d98cd0bde22e8960772",
+        "name": "Nike Dri-Fit T-Shirt",
+        "slug": "nike-dri-fit-t-shirt",
+        "price": "$25",
+        "published_at": "2021-08-16T12:50:35.569Z",
+        "createdAt": "2021-08-16T12:50:32.330Z",
+        "updatedAt": "2021-08-18T23:49:55.279Z",
         "__v": 0,
-        "id": "61190d98cd0bde22e8960771",
-        "category": "Adidas",
-        "type": "Shoes",
+        "id": "61190d98cd0bde22e8960772",
+        "category": "Nike",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/5vBY1FM/Superstar-Shoes-Black-EG4959-01-standard.jpg",
-            "https://i.ibb.co/C9fXhC1/OIP-1.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6511_ck9czw.jpg"
         ],
         "colors": [{
                 "name": "Black",
                 "colorBg": "#111827"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
+                "name": "Red",
+                "colorBg": "#E84C3D"
             },
             {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Blue",
+                "colorBg": "#3C5A99"
             }
         ]
     },
     {
-        "_id": "611a4d38666787300c2e18ff",
-        "name": "Adidas Ultraboost DNA x LEGO",
-        "slug": "adidas-ultraboost-dna-x-lego",
-        "price": "$35",
-        "published_at": "2021-08-16T11:34:19.821Z",
-        "createdAt": "2021-08-16T11:34:16.949Z",
-        "updatedAt": "2021-08-16T11:34:19.951Z",
+        "_id": "abcdefghijklmnop",
+        "name": "Puma Cotton T-Shirt",
+        "slug": "puma-cotton-t-shirt",
+        "price": "$20",
+        "published_at": "2022-06-19T15:10:25.678Z",
+        "createdAt": "2022-06-19T15:10:22.901Z",
+        "updatedAt": "2022-06-21T12:05:33.456Z",
         "__v": 0,
-        "id": "611a4d38666787300c2e18ff",
-        "category": "Adidas",
-        "type": "Shoes",
-        "images": [
-            "https://i.ibb.co/ft6R5Rf/adidas-Ultraboost-DNA-x-LEGO-r-Plates-Shoes-White-FY7690.jpg",
-            "https://i.ibb.co/g9FwRFd/adidas-Ultra-Boost-DNA-Lego-FY7690-release-date-raffle-list-6-600x600.jpg"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "611a710e666787300c2e1900",
-        "name": "Air Jordan 1 Retro OG Satin Black Toe",
-        "slug": "air-jordan-1-retro-og-satin-black-toe",
-        "price": "$35",
-        "published_at": "2021-08-16T14:07:19.440Z",
-        "createdAt": "2021-08-16T14:07:10.510Z",
-        "updatedAt": "2021-08-16T14:49:01.582Z",
-        "__v": 0,
-        "id": "611a710e666787300c2e1900",
-        "category": "Nike product",
-        "type": "Shoes",
-        "images": [
-            "https://i.ibb.co/z28xGS6/R-1.jpg",
-            "https://i.ibb.co/2ZkVjq7/OIP.jpg"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "611a740b666787300c2e1901",
-        "name": "Converse High Chuck Taylor",
-        "slug": "converse-high-chuck-taylor",
-        "price": "$35",
-        "published_at": "2021-08-16T14:19:58.347Z",
-        "createdAt": "2021-08-16T14:19:55.713Z",
-        "updatedAt": "2021-08-16T14:19:58.468Z",
-        "__v": 0,
-        "id": "611a740b666787300c2e1901",
-        "category": "Converse",
-        "type": "Shoes",
-        "images": [
-            "https://i.ibb.co/f2TjY6M/159575-C-A-107-X1.jpg",
-            "https://i.ibb.co/5jkPCdZ/13604756-1-black.jpg"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "611a79e3666787300c2e1902",
-        "name": "Nike Winter Jacket Black Men",
-        "slug": "nike-winter-jacket-black-men",
-        "price": "$35",
-        "published_at": "2021-08-16T14:46:11.598Z",
-        "createdAt": "2021-08-16T14:44:51.880Z",
-        "updatedAt": "2021-08-16T14:46:11.710Z",
-        "__v": 0,
-        "id": "611a79e3666787300c2e1902",
-        "category": "Nike product",
-        "type": "Jacket and Hoodie",
-        "images": [
-            "https://i.ibb.co/2SkD2CK/nike-Padded-Down-Jacket.jpg"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "611c4bcd9c72d22a449950e5",
-        "name": "Puma Mens Red Trainers",
-        "slug": "puma-mens-red-trainers",
-        "price": "$35",
-        "published_at": "2021-08-17T23:56:12.469Z",
-        "createdAt": "2021-08-17T23:52:45.773Z",
-        "updatedAt": "2021-08-18T05:24:47.632Z",
-        "__v": 0,
-        "id": "611c4bcd9c72d22a449950e5",
+        "id": "abcdefghijklmnop",
         "category": "Puma",
-        "type": "Shoes",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/tcqZQY8/OIP-2-removebg-preview.jpg",
-            "https://i.ibb.co/wwH8w7h/t6a8580-4-removebg-preview.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6508_h4uzpp.jpg"
         ],
         "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
+                "name": "Red",
+                "colorBg": "#FF0000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
+                "name": "Green",
+                "colorBg": "#00FF00"
             },
             {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Blue",
+                "colorBg": "#0000FF"
             }
         ]
     },
     {
-        "_id": "611c94b8ce9f030016e2b11b",
-        "name": "Puma Wmns Dare Black",
-        "slug": "puma-wmns-dare-black",
-        "price": "$35",
-        "published_at": "2021-08-18T05:05:02.984Z",
-        "createdAt": "2021-08-18T05:03:52.796Z",
-        "updatedAt": "2021-08-18T05:15:17.458Z",
+        "_id": "1a2b3c4d5e6f7g8h9i",
+        "name": "Puma Essential Crew Neck T-Shirt",
+        "slug": "puma-essential-crew-neck-t-shirt",
+        "price": "$20",
+        "published_at": "2022-06-15T11:00:00.000Z",
+        "createdAt": "2022-06-15T10:59:59.999Z",
+        "updatedAt": "2022-06-17T18:30:00.555Z",
         "__v": 0,
-        "id": "611c94b8ce9f030016e2b11b",
+        "id": "1a2b3c4d5e6f7g8h9i",
         "category": "Puma",
-        "type": "Shoes",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/jGk9NgZ/363699-01-1-removebg-preview-1.jpg",
-            "https://i.ibb.co/X5x250X/363699-01-2-removebg-preview-1.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6514_ipnnwn.jpg"
         ],
         "colors": [{
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "White",
+                "colorBg": "#FFFFFF"
             }
         ]
     },
     {
-        "_id": "611c9809ce9f030016e2b11c",
-        "name": "Adidas Trefoil Classic Cap Black",
-        "slug": "adidas-trefoil-classic-cap-black",
-        "price": "$35",
-        "published_at": "2021-08-18T05:19:43.746Z",
-        "createdAt": "2021-08-18T05:18:01.891Z",
-        "updatedAt": "2021-08-18T05:19:44.291Z",
+        "_id": "abc123def456ghi789",
+        "name": "Reebok Classic Tee",
+        "slug": "reebok-classic-tee",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T12:00:00.555Z",
         "__v": 0,
-        "id": "611c9809ce9f030016e2b11c",
-        "category": "Adidas",
-        "type": "Caps and Hats",
+        "id": "abc123def456ghi789",
+        "category": "Reebok",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/THd21hk/14be5d24-c54a-4e3f-8dae-78585f0e44db-jpg.webp",
-            "https://i.ibb.co/6smt1p1/3ec19b76-d669-4dcd-a25d-0979109c8f81-jpg.webp"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6557_ylxnyh.jpg"
         ],
         "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
+                "name": "Heather Gray",
+                "colorBg": "#7f7f7f"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Navy Blue",
+                "colorBg": "#000080"
             }
         ]
     },
     {
-        "_id": "6128fe5d8ebb4b0016cf2eaf",
-        "name": "England 2021 Jersey",
-        "slug": "england-2021-jersey",
+        "_id": "zyxwvutsrqponmlkjihgfedcba",
+        "name": "Under Armour Tech Tee",
+        "slug": "under-armour-tech-tee",
         "price": "$35",
-        "published_at": "2021-08-27T15:01:58.345Z",
-        "createdAt": "2021-08-27T15:01:49.868Z",
-        "updatedAt": "2021-08-27T15:01:58.902Z",
+        "published_at": "2022-11-01T08:00:00.000Z",
+        "createdAt": "2022-11-01T07:59:59.999Z",
+        "updatedAt": "2022-11-03T12:00:00.555Z",
         "__v": 0,
-        "id": "6128fe5d8ebb4b0016cf2eaf",
-        "category": "Nike product",
-        "type": "Jerseys and Kits",
+        "id": "zyxwvutsrqponmlkjihgfedcba",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/DMDvh5N/47c105c8-4ae1-41bf-9818-b902239fc085.webp",
-            "https://i.ibb.co/Z1kSGJm/data-jpeg.webp"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6525_jqjash.jpg"
         ],
         "colors": [{
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "White",
+                "colorBg": "#FFFFFF"
             }
         ]
     },
     {
-        "_id": "6128ffbf8ebb4b0016cf2eb0",
-        "name": "NB Basic T-shirt",
-        "slug": "nb-basic-t-shirt",
-        "price": "$35",
-        "published_at": "2021-08-27T15:07:49.471Z",
-        "createdAt": "2021-08-27T15:07:43.810Z",
-        "updatedAt": "2021-08-27T15:07:50.018Z",
+        "_id": "jklmnopqrstuvwxyz",
+        "name": "Converse Chuck Taylor T-Shirt",
+        "slug": "converse-chuck-taylor-t-shirt",
+        "price": "$30",
+        "published_at": "2022-08-01T15:00:00.000Z",
+        "createdAt": "2022-08-01T14:59:59.999Z",
+        "updatedAt": "2022-08-03T21:30:00.555Z",
         "__v": 0,
-        "id": "6128ffbf8ebb4b0016cf2eb0",
-        "category": "New balance",
-        "type": "T-shirt",
-        "images": [
-            "https://i.ibb.co/sJX2Tj0/mt03203bk-nb-70-i.webp",
-            "https://i.ibb.co/0QrFtGX/mt03203ecl-nb-40-i.webp"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "612da23bfa2eca0016d1836e",
-        "name": "Nike Air Jordan 2 Retro Wing It",
-        "slug": "nike-air-jordan-2-retro-wing-it",
-        "price": "$35",
-        "published_at": "2021-08-31T03:30:12.003Z",
-        "createdAt": "2021-08-31T03:30:03.156Z",
-        "updatedAt": "2022-03-22T08:52:25.931Z",
-        "__v": 0,
-        "id": "612da23bfa2eca0016d1836e",
-        "category": "Nike product",
-        "type": "Shoes",
-        "images": [
-            "https://i.ibb.co/qxfYHg4/a4c94814c81010c5f956269526486fa3-crop-exact.jpg",
-            "https://i.ibb.co/Lv3SvQs/Nike-Air-Jordan-2-Retro-Wing-It-06-coolsneakers.jpg"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "612da319fa2eca0016d1836f",
-        "name": "Nike Wristbands Navy",
-        "slug": "nike-wristbands-navy",
-        "price": "$35",
-        "published_at": "2021-08-31T03:33:54.417Z",
-        "createdAt": "2021-08-31T03:33:45.254Z",
-        "updatedAt": "2021-08-31T03:33:54.967Z",
-        "__v": 0,
-        "id": "612da319fa2eca0016d1836f",
-        "category": "Nike product",
-        "type": "Accessories",
-        "images": [
-            "https://i.ibb.co/YRcwt2Z/OIP.jpg",
-            "https://i.ibb.co/gwSYGcp/174831.jpg"
-        ],
-        "colors": [{
-                "name": "Black",
-                "colorBg": "#111827"
-            },
-            {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
-            }
-        ]
-    },
-    {
-        "_id": "612da423fa2eca0016d18370",
-        "name": "Converse CDG White",
-        "slug": "converse-cdg-white",
-        "price": "$35",
-        "published_at": "2021-08-31T03:38:20.543Z",
-        "createdAt": "2021-08-31T03:38:11.895Z",
-        "updatedAt": "2021-08-31T03:38:21.095Z",
-        "__v": 0,
-        "id": "612da423fa2eca0016d18370",
+        "id": "jklmnopqrstuvwxyz",
         "category": "Converse",
-        "type": "Shoes",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/K2D1VbZ/OIP-1.jpg",
-            "https://i.ibb.co/gV1BjWP/cdg.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6513_uye5l0.jpg"
         ],
         "colors": [{
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Red",
+                "colorBg": "#FF0000"
             }
         ]
     },
     {
-        "_id": "612da4b7fa2eca0016d18371",
-        "name": "Converse CDG Low Black",
-        "slug": "converse-cdg-low-black",
-        "price": "$35",
-        "published_at": "2021-08-31T03:40:44.382Z",
-        "createdAt": "2021-08-31T03:40:39.186Z",
-        "updatedAt": "2021-08-31T03:40:44.948Z",
+        "_id": "9i8h7g6f5e4d3c2b1a",
+        "name": "Under Armour Sportstyle T-Shirt",
+        "slug": "under-armour-sportstyle-t-shirt",
+        "price": "$30",
+        "published_at": "2022-05-20T13:45:00.000Z",
+        "createdAt": "2022-05-20T13:44:59.999Z",
+        "updatedAt": "2022-05-22T16:15:00.777Z",
         "__v": 0,
-        "id": "612da4b7fa2eca0016d18371",
-        "category": "Converse",
-        "type": "Shoes",
+        "id": "9i8h7g6f5e4d3c2b1a",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/WxVtybN/1553480-165cf094-4df7-4e8f-a54b-c5a4d912cfa1-1364-1364.jpg",
-            "https://i.ibb.co/C2jd5Nc/OIP-3.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6563_ikfooq.jpg"
         ],
         "colors": [{
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Red",
+                "colorBg": "#FF0000"
             }
         ]
     },
     {
-        "_id": "612da558fa2eca0016d18372",
-        "name": "Converse Core Poly Fill Jacket",
-        "slug": "converse-core-poly-fill-jacket",
-        "price": "$35",
-        "published_at": "2021-08-31T03:43:25.419Z",
-        "createdAt": "2021-08-31T03:43:20.213Z",
-        "updatedAt": "2021-08-31T03:43:25.972Z",
+        "_id": "0a1b2c3d4e5f6g7h8i9j",
+        "name": "Under Armour UA Tech T-Shirt",
+        "slug": "under-armour-ua-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
         "__v": 0,
-        "id": "612da558fa2eca0016d18372",
-        "category": "Converse",
-        "type": "Jacket and Hoodie",
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/pwwxyg1/converse-blue-Core-Poly-Fill-Jacket-Mens-Jacket-In-Blue.jpg",
-            "https://i.ibb.co/3h7HW2K/converse-blue-Core-Poly-Fill-Jacket-Mens-Jacket-In-Blue-1.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6566_fjwves.jpg",
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6560_dmxcbm.jpg",
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6564_d3bkpn.jpg",
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6565_aztzud.jpg"
         ],
         "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
             }
         ]
     },
     {
-        "_id": "612da85afa2eca0016d18373",
-        "name": "Converse Jacket With Baseball Collar",
-        "slug": "converse-jacket-with-baseball-collar",
-        "price": "$35",
-        "published_at": "2021-08-31T03:56:16.379Z",
-        "createdAt": "2021-08-31T03:56:10.500Z",
-        "updatedAt": "2021-08-31T03:56:16.929Z",
+        "_id": "0a1b2c3d4e5f6g7h8i9a",
+        "name": "Under Armour UA Tech T-Shirt",
+        "slug": "under-armour-ub-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
         "__v": 0,
-        "id": "612da85afa2eca0016d18373",
-        "category": "Converse",
-        "type": "Jacket and Hoodie",
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/gtPQ70z/OIP-4.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6919_dkflru.jpg"
         ],
         "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
             }
         ]
     },
     {
-        "_id": "612da908fa2eca0016d18374",
-        "name": "Puma Infants Suede Pink Lady",
-        "slug": "puma-infants-suede-pink-lady",
-        "price": "$35",
-        "published_at": "2021-08-31T03:59:10.204Z",
-        "createdAt": "2021-08-31T03:59:04.856Z",
-        "updatedAt": "2021-08-31T03:59:10.768Z",
+        "_id": "0a1b2c3d4e5f6g7h8i9c",
+        "name": "Under Armour Uc Tech T-Shirt",
+        "slug": "under-armour-uc-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
         "__v": 0,
-        "id": "612da908fa2eca0016d18374",
-        "category": "Puma",
-        "type": "Shoes",
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/GC5ZDtZ/137294.jpg",
-            "https://i.ibb.co/10Ldm9f/R-1.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6922_gls7ft.jpg"
         ],
         "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
             }
         ]
     },
     {
-        "_id": "612daa8ffa2eca0016d18375",
-        "name": "Adidas zx4000 Retro",
-        "slug": "adidas-zx4000-retro",
-        "price": "$35",
-        "published_at": "2021-08-31T04:05:45.659Z",
-        "createdAt": "2021-08-31T04:05:35.300Z",
-        "updatedAt": "2021-08-31T04:05:46.210Z",
+        "_id": "0a1b2c3d4e5f6g7h8i9e",
+        "name": "Under Armour Ue Tech T-Shirt",
+        "slug": "under-armour-ue-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
         "__v": 0,
-        "id": "612daa8ffa2eca0016d18375",
-        "category": "Adidas",
-        "type": "Shoes",
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/YbJCVcy/5861d4b11ce77ca813ef9ab8750af226.jpg",
-            "https://i.ibb.co/dsZY7Cj/adidas-zx-roots-running-exhibition-london-2-320x205.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6488_zbdcor.jpg"
         ],
         "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
             }
         ]
     },
     {
-        "_id": "612dab85fa2eca0016d18376",
-        "name": "Adidas London Half-zip Overhead Jacket",
-        "slug": "adidas-london-half-zip-overhead-jacket",
-        "price": "$35",
-        "published_at": "2021-08-31T04:09:48.175Z",
-        "createdAt": "2021-08-31T04:09:41.970Z",
-        "updatedAt": "2021-08-31T04:09:48.725Z",
+        "_id": "0a1b2c3d4e5f6g7h8i9d",
+        "name": "Under Armour Ud Tech T-Shirt",
+        "slug": "under-armour-ud-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
         "__v": 0,
-        "id": "612dab85fa2eca0016d18376",
-        "category": "Adidas",
-        "type": "Jacket and Hoodie",
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/XV1X0sn/adidas-originals-Navy-London-Half-zip-Overhead-Jacket.jpg",
-            "https://i.ibb.co/nfskcc8/adidas-originals-Navy-London-Half-zip-Overhead-Jacket-1.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6487_ptjbr3.jpg"
         ],
         "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
-            },
-            {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
             }
         ]
     },
     {
-        "_id": "612dabd6fa2eca0016d18377",
-        "name": "Nike Dri-FIT Classic Basketball Jersey",
-        "slug": "nike-dri-fit-classic-basketball-jersey",
-        "price": "$35",
-        "published_at": "2021-08-31T04:12:25.385Z",
-        "createdAt": "2021-08-31T04:11:02.194Z",
-        "updatedAt": "2021-08-31T04:12:25.938Z",
+        "_id": "0a1b2c3d4e5f6g7h8i9f",
+        "name": "Under Armour Uf Tech T-Shirt",
+        "slug": "under-armour-uf-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
         "__v": 0,
-        "id": "612dabd6fa2eca0016d18377",
-        "category": "Nike product",
-        "type": "Jerseys and Kits",
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
         "images": [
-            "https://i.ibb.co/0VnWhNb/dri-fit-classic-basketball-jersey-g-Z1-Bk0.jpg",
-            "https://i.ibb.co/ccbzTbg/nike-m-dry-classic-jersey.jpg"
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6920_rita6c.jpg"
         ],
         "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
                 "name": "Black",
-                "colorBg": "#111827"
+                "colorBg": "#000000"
             },
             {
-                "name": "Brass",
-                "colorBg": "#FDE68A"
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9g",
+        "name": "Under Armour Ug Tech T-Shirt",
+        "slug": "under-armour-ug-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6486_q5ktrr.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
             },
             {
-                "name": "Chrome",
-                "colorBg": "#E5E7EB"
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9h",
+        "name": "Under Armour Uh Tech T-Shirt",
+        "slug": "under-armour-uh-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6926_stucas.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9k",
+        "name": "Under Armour Uk Tech T-Shirt",
+        "slug": "under-armour-uk-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6493_tghj5q.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9m",
+        "name": "Under Armour Um Tech T-Shirt",
+        "slug": "under-armour-um-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6510_t09w71.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9l",
+        "name": "Under Armour Ul Tech T-Shirt",
+        "slug": "under-armour-ul-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6492_lqohrs.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9m",
+        "name": "Under Armour Um Tech T-Shirt",
+        "slug": "under-armour-um-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6492_lqohrs.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
+            }
+        ]
+    },
+    {
+        "_id": "0a1b2c3d4e5f6g7h8i9n",
+        "name": "Under Armour Un Tech T-Shirt",
+        "slug": "under-armour-un-tech-t-shirt",
+        "price": "$30",
+        "published_at": "2022-12-01T08:00:00.000Z",
+        "createdAt": "2022-12-01T07:59:59.999Z",
+        "updatedAt": "2022-12-03T16:00:00.555Z",
+        "__v": 0,
+        "id": "0a1b2c3d4e5f6g7h8i9j",
+        "category": "Under Armour",
+        "type": "T-Shirt",
+        "images": [
+            "https://res.cloudinary.com/dcmvndqd1/image/upload/v1674040154/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.53.40_iodmml.jpg"
+        ],
+        "colors": [{
+                "name": "Gray",
+                "colorBg": "#808080"
+            },
+            {
+                "name": "White",
+                "colorBg": "#FFFFFF"
+            },
+            {
+                "name": "Black",
+                "colorBg": "#000000"
+            },
+            {
+                "name": "Pink",
+                "colorBg": "#FFC0CB"
             }
         ]
     }
+
 ]
