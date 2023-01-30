@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import CardSkeleton from '../../components/CardSkeleton';
 import ShopLayout from '../../components/ShopLayout';
 import { useSelector } from 'react-redux';
-import { recentCategory } from '../../slices/CategorySlice';
 import Seo from '../../components/SEO';
 import ProductCard from '../../components/ProductCard';
+import { RootState } from '../../store';
 
 export async function getStaticProps() {
   const res = await fetch(`${server}/api/items/category`);
@@ -32,17 +32,17 @@ interface CategoryProps {
 }
 
 function Category({ data, dataItems, dataTypes }: CategoryProps) {
-  // console.log(data, dataItems, dataTypes);
   const [sort, setSort] = useState(0);
-  const recent_category = useSelector(recentCategory);
-  const data_items = dataItems;
-  // .filter((item) => {
-  //   if (recent_category.length > 0) {
-  //     return item.type.name == recent_category;
-  //   } else {
-  //     return true;
-  //   }
-  // })
+  const recent_category = useSelector(
+    (state: RootState) => state.category.value
+  );
+  const data_items = dataItems.filter((item) => {
+    if (recent_category.length > 0) {
+      return item.type == recent_category;
+    } else {
+      return true;
+    }
+  });
   // .sort((a, b) => {
   //   if (sort === 1) {
   //     return a.price - b.price;

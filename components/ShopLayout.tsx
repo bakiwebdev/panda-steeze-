@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-// import Header from './header';
 import ShopCarousel from './ShopCarousel';
 import SideCategory from './SideCategory';
 import TopCategory from './TopCategory';
@@ -18,7 +17,6 @@ function Layout({ children, categories, types, setSort }: LayoutProps) {
   const [sortOpen, setSortOpen] = useState(false);
   return (
     <div className="w-full min-h-screen bg-cusgray pb-10">
-      {/* <Header /> */}
       <button
         onClick={() => setOpen(!open)}
         className="w-12 h-12 rounded-full bg-white fixed z-30 drop-shadow-2xl lg:hidden flex justify-center place-items-center bottom-0 left-0 m-5"

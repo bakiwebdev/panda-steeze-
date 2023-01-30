@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { recentCategory, selectCategory } from '../slices/CategorySlice';
+import { selectedCategory } from '../store/slices/categorySlice';
+import { RootState } from '../store';
 
 interface SideCategoryProps {
   typesData: string[];
 }
 function SideCategory({ typesData }: SideCategoryProps) {
   const dispatch = useDispatch();
-  const data = useSelector(recentCategory);
-  const [recent, setRecent] = useState();
+  const data = useSelector((state: RootState) => state.category.value);
+  const [recent, setRecent] = useState<string>();
   useEffect(() => setRecent(data));
   return (
     <div className="bg-white rounded-3xl px-5 py-6 shadow-lg w-2/3 md:w-1/2 lg:w-auto">
@@ -19,18 +20,18 @@ function SideCategory({ typesData }: SideCategoryProps) {
             className={`${
               recent == '' ? `font-semibold text-cusblack` : ``
             } cursor-pointer`}
-            onClick={() => dispatch(selectCategory(''))}
+            onClick={() => dispatch(selectedCategory(''))}
           >
             All products
           </button>
         </li>
-        {typesData.map((type, idx) => (
+        {typesData.map((type) => (
           <li key={type}>
             <button
               className={`${
                 recent == type ? `font-semibold text-cusblack` : ``
               } cursor-pointer`}
-              onClick={() => dispatch(selectCategory(type))}
+              onClick={() => dispatch(selectedCategory(type))}
             >
               {type}
             </button>

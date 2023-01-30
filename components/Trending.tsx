@@ -38,7 +38,7 @@ const Trending = () => {
 
         <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
           {data.length > 0 &&
-            data.map((item) => <ProductCard key={item.slug} item={item} />)}
+            data.map((item, idx) => <ProductCard key={idx} item={item} />)}
         </div>
 
         <div className="mt-8 text-sm md:hidden">

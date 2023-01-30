@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import { Provider } from 'react-redux';
-import { store } from '../app/store';
+import { store } from '../store';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import Router from 'next/router';

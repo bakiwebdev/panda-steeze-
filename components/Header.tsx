@@ -1,12 +1,8 @@
 import Link from 'next/link';
 import React, { Fragment, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { selectItems } from '../slices/BasketSlice';
-import { selectWishItems } from '../slices/WishListSlice';
 import MenuNav from './MenuNav';
-import nookies from 'nookies';
 import { useRouter } from 'next/dist/client/router';
-import { destroyCookie } from 'nookies';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import {
@@ -15,37 +11,25 @@ import {
   ShoppingBagIcon,
   HeartIcon,
   UserIcon,
-  ArrowLeftOnRectangleIcon,
-  ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import { RootState } from '../store';
+import { BasketItem } from '../store/slices/basketSlice';
 
 function Header() {
   const router = useRouter();
-  const data = useSelector(selectItems);
-  const [items, setItems] = useState([]);
-  const dataWish = useSelector(selectWishItems);
-  const [wish, setWish] = useState([]);
+  const data = useSelector((state: RootState) => state.basket.items);
+  const dataWish = useSelector((state: RootState) => state.wishlist.wishItems);
+  const [items, setItems] = useState<BasketItem[]>([]);
+  const [wish, setWish] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
-  const [cookie, setCookie] = useState({});
   useEffect(() => {
-    const dataCookie = nookies.get();
-    try {
-      setItems(data ? data : []);
-      setWish(dataWish);
-      setCookie(JSON.parse(dataCookie.user));
-    } catch (err) {
-      setCookie(dataCookie.user);
-    }
+    setItems(data);
+    setWish(dataWish);
   }, [data, dataWish]);
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
     setIsOpen(!isOpen);
-  };
-  const signOut = () => {
-    destroyCookie(null, 'token');
-    destroyCookie(null, 'user');
-    router.replace('/login');
   };
   return (
     <nav className="w-full mx-auto fixed bg-cusgray z-30 py-2 md:px-0 duration-200">
@@ -163,63 +147,11 @@ function Header() {
               )}
             </div>
           </Link>
-
-          {cookie && (
-            <div
-              onClick={() => router.push('/orders')}
-              className="w-8 relative flex items-center h-8 mr-1 rounded-full hover:bg-gray-200 active:bg-gray-300 cursor-pointer duration-200"
-            >
-              <svg
-                className="w-6 m-auto h-6 text-cusblack"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-                />
-              </svg>
-            </div>
-          )}
-
           <button
             onClick={() => setOpen(!open)}
             className="w-8 relative flex items-center h-8 rounded-full hover:bg-gray-200 active:bg-gray-300 cursor-pointer duration-200"
           >
             <UserIcon className="w-6 h-6 text-cusblack m-auto" />
-            {open && (
-              <div className="p-3 bg-white absolute top-11 leading-relaxed right-0 rounded-lg shadow-lg text-xs text-cusblack">
-                {cookie && (
-                  <div className="bg-cusblack text-white p-3 rounded-lg">
-                    <ul className="text-left w-28">
-                      {/* <li className="line-clamp-1">{cookie.username}</li>
-                      <li className="line-clamp-1">{cookie.email}</li> */}
-                    </ul>
-                  </div>
-                )}
-                {cookie && (
-                  <div
-                    onClick={signOut}
-                    className="hover:underline mt-2 flex place-items-center justify-end w-fit"
-                  >
-                    <ArrowRightOnRectangleIcon className="w-6 h-6 text-cusblack" />
-                    <span>Sign out</span>
-                  </div>
-                )}
-                {!cookie && (
-                  <Link href="/login">
-                    <div className="hover:underline flex gap-2 place-items-center w-fit">
-                      <ArrowLeftOnRectangleIcon className="w-6 h-6 text-cusblack" />
-                      <span>Sign In</span>
-                    </div>
-                  </Link>
-                )}
-              </div>
-            )}
           </button>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useDispatch } from 'react-redux';
-import { addToWishlist } from '../slices/WishListSlice';
+import { addToWishlist } from '../store/slices/wishlistSlice';
 import { HeartIcon } from '@heroicons/react/24/outline';
 
 const ProductCard = ({ item }: { item: Product }) => {
@@ -25,7 +25,9 @@ const ProductCard = ({ item }: { item: Product }) => {
         <div className="hidden absolute rounded-xl h-full w-full bg-gray-300 backdrop-filter backdrop-blur-sm bg-opacity-30 top-0 group group-hover:flex justify-center place-items-center z-10">
           <div className="flex overflow-hidden cursor-pointer">
             <button
-              onClick={() => dispatch(addToWishlist(item.slug))}
+              onClick={() => {
+                dispatch(addToWishlist(item.slug));
+              }}
               className="p-2 bg-white hover:bg-gray-100 active:bg-gray-200 rounded-lg"
             >
               <HeartIcon className="w-6 m-auto h-6 text-cusblack" />
