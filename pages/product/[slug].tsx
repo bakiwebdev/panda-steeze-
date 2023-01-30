@@ -50,10 +50,6 @@ export async function getStaticPaths() {
   };
 }
 
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ');
-}
-
 interface ProductDetailProps {
   data: Product;
   dataAlso: Product[];
@@ -61,8 +57,6 @@ interface ProductDetailProps {
 
 const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
   const [dataItem, setDataItem] = useState<Product>();
-  const [selectedColor, setSelectedColor] = useState(data.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(0);
   const dispatch = useDispatch();
   const [imgSelected, setImgSelected] = useState(0);
 
@@ -71,7 +65,6 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
   useEffect(() => {
     if (data) {
       setDataItem(data);
-      setSelectedColor(data.colors[0]);
     }
   }, [data]);
 
