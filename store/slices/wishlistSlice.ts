@@ -28,4 +28,7 @@ export const wishlistSlice = createSlice({
 // action
 export const { addToWishlist, removeFromWishlist } = wishlistSlice.actions;
 
+// Selectors - This is how we pull information from the Global store slice
+export const selectWishItems = (state: any) => state.wishlist.wishItems;
+
 export default wishlistSlice.reducer;

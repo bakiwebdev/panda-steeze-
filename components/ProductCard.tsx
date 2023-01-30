@@ -2,10 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useDispatch } from 'react-redux';
-import { addToWishlist } from '../store/slices/wishlistSlice';
+import {
+  addToWishlist,
+  removeFromWishlist,
+} from '../store/slices/wishlistSlice';
 import { HeartIcon } from '@heroicons/react/24/outline';
 
-const ProductCard = ({ item }: { item: Product }) => {
+interface ProductCardProps {
+  item: Product;
+  onWishList?: boolean;
+}
+
+const ProductCard = ({ item, onWishList = false }: ProductCardProps) => {
   const dispatch = useDispatch();
   return (
     <div className="group">
@@ -22,18 +30,20 @@ const ProductCard = ({ item }: { item: Product }) => {
           alt={item.name}
           className="h-full w-full object-cover object-center group-hover:opacity-75"
         />
-        <div className="hidden absolute rounded-xl h-full w-full bg-gray-300 backdrop-filter backdrop-blur-sm bg-opacity-30 top-0 group group-hover:flex justify-center place-items-center z-10">
-          <div className="flex overflow-hidden cursor-pointer">
-            <button
-              onClick={() => {
-                dispatch(addToWishlist(item.slug));
-              }}
-              className="p-2 bg-white hover:bg-gray-100 active:bg-gray-200 rounded-lg"
-            >
-              <HeartIcon className="w-6 m-auto h-6 text-cusblack" />
-            </button>
+        {!onWishList && (
+          <div className="hidden absolute rounded-xl h-full w-full bg-gray-300 backdrop-filter backdrop-blur-sm bg-opacity-30 top-0 group group-hover:flex justify-center place-items-center z-10">
+            <div className="flex overflow-hidden cursor-pointer">
+              <button
+                onClick={() => {
+                  dispatch(addToWishlist(item.slug));
+                }}
+                className="p-2 bg-white hover:bg-gray-100 active:bg-gray-200 rounded-lg"
+              >
+                <HeartIcon className="w-6 m-auto h-6 text-cusblack" />
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </motion.div>
       <Link href={`/product/${item.slug}`}>
         <h3 className="mt-4 text-sm text-gray-700">{item.name}</h3>
@@ -54,8 +64,18 @@ const ProductCard = ({ item }: { item: Product }) => {
             ))}
           </ul>
         )}
-        <p className="mt-1 text-lg font-medium text-gray-900">{item.price}</p>
+        {!onWishList && (
+          <p className="mt-1 text-lg font-medium text-gray-900">{item.price}</p>
+        )}
       </Link>
+      {onWishList && (
+        <button
+          onClick={() => dispatch(removeFromWishlist(item.slug))}
+          className="text-cusblack mt-1.5 bg-white border border-cusblack py-1 text-xs w-full rounded-lg hover:bg-gray-100"
+        >
+          Remove
+        </button>
+      )}
     </div>
   );
 };
