@@ -59,4 +59,7 @@ export const {
   deleteFromBasket,
 } = basketSlice.actions;
 
+// Selectors - This is how we pull information from the Global store slice
+export const selectItems = (state: any) => state.basket.items;
+
 export default basketSlice.reducer;

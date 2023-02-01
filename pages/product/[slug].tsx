@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import NotFound from '../404';
 import { addToWishlist } from '../../store/slices/wishlistSlice';
 import { motion } from 'framer-motion';
+import { addToBasket } from '../../store/slices/basketSlice';
 
 export async function getStaticProps({ params }: any) {
   const { slug } = params;
@@ -174,12 +175,7 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
               <div className="buttoncart flex mt-5 w-full">
                 <button
                   onClick={() => {
-                    // dispatch(
-                    //   addToBasket({
-                    //     ...dataItem,
-                    //     selectedSizeProp: dataItem.prop[0].size[selectedSize],
-                    //   })
-                    // );
+                    dispatch(addToBasket({ ...dataItem, quantity: 1 }));
                   }}
                   className="w-4/5 md:w-3/5 bg-cusblack overflow-hidden py-4 text-white rounded-lg text-sm active:bg-gray-800 duration-100"
                 >
