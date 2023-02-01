@@ -1,15 +1,20 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import BasketProduct from '../components/BasketProduct';
-import { selectItems } from '../store/slices/basketSlice';
+import { BasketItem, selectItems } from '../store/slices/basketSlice';
 
 const Basket = () => {
-  const items: Product[] = useSelector(selectItems);
+  const basketItems = useSelector(selectItems);
+  const [items, setItems] = useState<BasketItem[]>([]);
   const createCheckoutSession = async () => {
     alert('Checking out is not available, please try later!');
   };
+
+  useEffect(() => {
+    setItems(basketItems);
+  }, [basketItems]);
 
   return (
     <>
@@ -23,10 +28,7 @@ const Basket = () => {
                   <div className="pt-5 pb-2">
                     {items.length > 0 &&
                       items.map((item) => (
-                        <BasketProduct
-                          key={item.slug}
-                          item={{ ...item, quantity: 1 }}
-                        />
+                        <BasketProduct key={item.slug} item={item} />
                       ))}
                     {items.length === 0 && (
                       <div className="text-gray-400 text-sm mb-10">
@@ -67,8 +69,12 @@ const Basket = () => {
                       className="flex justify-between place-items-center text-sm mb-1"
                     >
                       <p className="pr-3">{item.name}</p>
+                      <p>
+                        {item.price} x {item.quantity}
+                      </p>
                     </div>
                   ))}
+                  <div className="my-3 border-b border-cusblack pb-2"></div>
                   <div className="flex justify-between place-items-center text-sm mb-1">
                     <p>TAX</p>
                     <p>FREE</p>
@@ -77,6 +83,7 @@ const Basket = () => {
 
                 <div className="flex justify-between place-items-center font-semibold">
                   <p>TOTAL</p>
+                  <p>$120</p>
                 </div>
 
                 <button

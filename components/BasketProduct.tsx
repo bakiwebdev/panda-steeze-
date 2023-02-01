@@ -51,17 +51,18 @@ const BasketProduct = ({ item }: BasketProductProps) => {
           className="font-semibold text-cusblack text-right"
           displayType={'text'}
           thousandSeparator={true}
-          prefix={'Rp'}
-          renderText={(value, props) => (
+          prefix={'$'}
+          renderText={(value: any, props: any) => (
             <h1 className="font-semibold text-cusblack text-right" {...props}>
               {value}
             </h1>
           )}
         /> */}
+        <h1 className="font-semibold text-cusblack text-right">{item.price}</h1>
         <div className="flex ml-auto text-cusblack mt-1 md:mt-0">
           <button
             onClick={() => {
-              if (item.quantity > 1) dispatch(minusItem(-1));
+              if (item.quantity > 1) dispatch(minusItem(item));
             }}
             className="border border-cusblack active:bg-gray-800 rounded-sm p-1 hover:bg-cusblack hover:text-white duration-100"
           >
@@ -81,7 +82,7 @@ const BasketProduct = ({ item }: BasketProductProps) => {
             </svg>
           </button>
           <button
-            onClick={() => dispatch(plusItem(1))}
+            onClick={() => dispatch(plusItem(item))}
             className="border border-cusblack active:bg-gray-800 rounded-sm p-1 hover:bg-cusblack hover:text-white duration-100 mx-1"
           >
             <svg

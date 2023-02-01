@@ -36,13 +36,25 @@ export const basketSlice = createSlice({
       state.items = addItemToCart(state.items, action.payload);
     },
     removeFromBasket: (state, action) => {
-      state.items = state.items.filter((item) => item !== action.payload.id);
+      state.items = state.items.filter((item) => item.id !== action.payload.id);
     },
     plusItem: (state, action) => {
-      [...state.items, (state.items[action.payload].quantity += 1)];
+      const updatedItem = state.items.map((item) => {
+        if (item.id === action.payload.id) {
+          item.quantity += 1;
+        }
+        return item;
+      });
+      state.items = updatedItem;
     },
     minusItem: (state, action) => {
-      [...state.items, (state.items[action.payload].quantity -= 1)];
+      const updatedItem = state.items.map((item) => {
+        if (item.id === action.payload.id) {
+          item.quantity -= 1;
+        }
+        return item;
+      });
+      state.items = updatedItem;
     },
     deleteFromBasket: (state) => {
       state.items = [];

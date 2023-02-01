@@ -126,7 +126,7 @@ function Header() {
                 className={`flex
                 } absolute text-xs font-light justify-center text-white text-center w-4 h-4 bg-cusblack rounded-full bottom-0 right-0`}
               >
-                {/* {items.reduce((a, item) => a + item?.quantity, 0)} */}0
+                {items.length || 0}
               </div>
             ) : (
               ''
