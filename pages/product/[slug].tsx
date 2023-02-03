@@ -1,24 +1,30 @@
 import { useEffect, useState } from 'react';
 import { HeartIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { HeartIcon as HeartIconSolid } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import db from '../../app/data.json';
 import ProductCard from '../../components/ProductCard';
 import Link from 'next/link';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import NotFound from '../404';
-import { addToWishlist } from '../../store/slices/wishlistSlice';
+import {
+  addToWishlist,
+  removeFromWishlist,
+  selectWishItems,
+} from '../../store/slices/wishlistSlice';
 import { motion } from 'framer-motion';
-import { addToBasket } from '../../store/slices/basketSlice';
+import {
+  BasketItem,
+  addToBasket,
+  selectItems,
+  removeFromBasket,
+} from '../../store/slices/basketSlice';
 
 export async function getStaticProps({ params }: any) {
   const { slug } = params;
   const data = db.filter((data) => {
     return data.slug === slug;
   });
-  // const dataAlso: Product[] = [];
-  // [1, 2, 3, 4].forEach(() => {
-  //   dataAlso.push(db[Math.floor(Math.random() * db.length)]);
-  // });
 
   if (!data[0]) {
     return {
@@ -57,11 +63,17 @@ interface ProductDetailProps {
 }
 
 const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
-  const [dataItem, setDataItem] = useState<Product>();
   const dispatch = useDispatch();
+  const wishListSlug = useSelector(selectWishItems);
+  const basketItems: BasketItem[] = useSelector(selectItems);
+  const [isOnWishList, setIsOnWishList] = useState<boolean>(
+    wishListSlug.includes(data.slug)
+  );
+  const [isOnBasketList, setIsOnBasketList] = useState<boolean>(
+    basketItems.filter((item) => item.slug === data.slug).length > 0
+  );
+  const [dataItem, setDataItem] = useState<Product>();
   const [imgSelected, setImgSelected] = useState(0);
-
-  if (!data || !dataAlso) return <NotFound />;
 
   useEffect(() => {
     if (data) {
@@ -69,6 +81,7 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
     }
   }, [data]);
 
+  if (!data || !dataAlso) return <NotFound />;
   return (
     <>
       <div className="bg-cusgray min-h-screen pb-10">
@@ -175,7 +188,11 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
               <div className="buttoncart flex mt-5 w-full">
                 <button
                   onClick={() => {
-                    dispatch(addToBasket({ ...dataItem, quantity: 1 }));
+                    isOnBasketList
+                      ? dispatch(removeFromBasket(data))
+                      : dispatch(addToBasket({ ...dataItem, quantity: 1 }));
+
+                    setIsOnBasketList(!isOnBasketList);
                   }}
                   className="w-4/5 md:w-3/5 bg-cusblack overflow-hidden py-4 text-white rounded-lg text-sm active:bg-gray-800 duration-100"
                 >
@@ -184,15 +201,25 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
                     animate={{ y: 0 }}
                     className="flex justify-center place-items-center overflow-hidden"
                   >
-                    Add to basket
+                    {isOnBasketList ? 'Remove' : 'Add to basket'}
                     <ShoppingCartIcon className="ml-2 w-5 h-5" />
                   </motion.span>
                 </button>
                 <button
-                  onClick={() => dispatch(addToWishlist(dataItem?.slug))}
+                  onClick={() => {
+                    isOnWishList
+                      ? dispatch(removeFromWishlist(data?.slug))
+                      : dispatch(addToWishlist(data?.slug));
+
+                    setIsOnWishList(!isOnWishList);
+                  }}
                   className="w-1/5 ml-2 bg-white border border-cusblack py-4 text-cusblack rounded-lg text-sm"
                 >
-                  <HeartIcon className="w-5 h-5 m-auto" />
+                  {isOnWishList ? (
+                    <HeartIconSolid className="w-5 h-5 m-auto fill-cusblack" />
+                  ) : (
+                    <HeartIcon className="w-5 h-5 m-auto" />
+                  )}
                 </button>
               </div>
             </div>
@@ -203,7 +230,7 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-x-4 gap-y-6">
               {dataItem &&
                 dataAlso.map((data, idx) => {
-                  if (idx < 4) return <ProductCard key={idx} item={data} />;
+                  if (idx < 4) return <ProductCard key={data.id} item={data} />;
                 })}
             </div>
           </div>

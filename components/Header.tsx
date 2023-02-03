@@ -10,7 +10,7 @@ import {
   RectangleStackIcon,
   ShoppingBagIcon,
   HeartIcon,
-  UserIcon,
+  // UserIcon,
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { RootState } from '../store';
@@ -22,7 +22,7 @@ function Header() {
   const dataWish = useSelector((state: RootState) => state.wishlist.wishItems);
   const [items, setItems] = useState<BasketItem[]>([]);
   const [wish, setWish] = useState<string[]>([]);
-  const [open, setOpen] = useState(false);
+  // ! const [open, setOpen] = useState(false);
   useEffect(() => {
     setItems(data);
     setWish(dataWish);
@@ -59,7 +59,7 @@ function Header() {
                 <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                   <div className="px-5 pt-5 pb-6">
                     <div className="flex items-center justify-between">
-                      <Link href="/">
+                      <Link href="/" className="flex items-center">
                         <Image
                           width={50}
                           height={50}
@@ -67,6 +67,9 @@ function Header() {
                           src="https://res.cloudinary.com/dcmvndqd1/image/upload/v1674038368/Panda%20Steeze/logo_m5w7l2.png"
                           alt="Panda Steeze Logo"
                         />
+                        <h3 className="text-md mr-2 font-semibold ml-3 text-cusblack">
+                          Panda Steeze
+                        </h3>
                       </Link>
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                         <span className="sr-only">Close menu</span>
@@ -92,6 +95,22 @@ function Header() {
                           </span>
                         </Link>
                         <Link
+                          href="/wishlist"
+                          className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                        >
+                          <span className="ml-3 text-base font-medium text-cusblack">
+                            My Wishlist
+                          </span>
+                        </Link>
+                        <Link
+                          href="/basket"
+                          className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                        >
+                          <span className="ml-3 text-base font-medium text-cusblack">
+                            Basket
+                          </span>
+                        </Link>
+                        <Link
                           href="/"
                           className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                         >
@@ -106,9 +125,11 @@ function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <h3 className="hidden md:inline text-md mr-2 font-semibold ml-3 text-cusblack">
-            Panda Steeze
-          </h3>
+          <Link href="/">
+            <h3 className="text-md mr-2 font-semibold ml-3 text-cusblack">
+              Panda Steeze
+            </h3>
+          </Link>
         </div>
         <div className="profile flex items-center place-items-center">
           <Link href="/shop">
@@ -147,12 +168,12 @@ function Header() {
               )}
             </div>
           </Link>
-          <button
+          {/* <button
             onClick={() => setOpen(!open)}
             className="w-8 relative flex items-center h-8 rounded-full hover:bg-gray-200 active:bg-gray-300 cursor-pointer duration-200"
           >
             <UserIcon className="w-6 h-6 text-cusblack m-auto" />
-          </button>
+          </button> */}
         </div>
       </div>
 

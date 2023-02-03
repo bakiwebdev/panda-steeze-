@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   addToWishlist,
   removeFromWishlist,
 } from '../store/slices/wishlistSlice';
 import { HeartIcon } from '@heroicons/react/24/outline';
+import { HeartIcon as HeartIconSolid } from '@heroicons/react/24/solid';
+import { useState } from 'react';
+import { selectWishItems } from '../store/slices/wishlistSlice';
 
 interface ProductCardProps {
   item: Product;
@@ -15,6 +18,11 @@ interface ProductCardProps {
 
 const ProductCard = ({ item, onWishList = false }: ProductCardProps) => {
   const dispatch = useDispatch();
+  const wishListSlug = useSelector(selectWishItems);
+  const [isOnWishList, setIsOnWishList] = useState<boolean>(
+    wishListSlug.includes(item.slug)
+  );
+
   return (
     <div className="group">
       <motion.div
@@ -35,11 +43,19 @@ const ProductCard = ({ item, onWishList = false }: ProductCardProps) => {
             <div className="flex overflow-hidden cursor-pointer">
               <button
                 onClick={() => {
-                  dispatch(addToWishlist(item.slug));
+                  isOnWishList
+                    ? dispatch(removeFromWishlist(item.slug))
+                    : dispatch(addToWishlist(item.slug));
+
+                  setIsOnWishList(!isOnWishList);
                 }}
                 className="p-2 bg-white hover:bg-gray-100 active:bg-gray-200 rounded-lg"
               >
-                <HeartIcon className="w-6 m-auto h-6 text-cusblack" />
+                {isOnWishList ? (
+                  <HeartIconSolid className="w-6 m-auto h-6 fill-cusblack" />
+                ) : (
+                  <HeartIcon className="w-6 m-auto h-6 text-cusblack" />
+                )}
               </button>
             </div>
           </div>

@@ -1,4 +1,3 @@
-// import { server } from '../../config';
 import React, { useEffect, useState } from 'react';
 import CardSkeleton from '../../components/CardSkeleton';
 import ShopLayout from '../../components/ShopLayout';
@@ -9,13 +8,6 @@ import { RootState } from '../../store';
 import db from '../../app/data.json';
 
 export async function getStaticProps() {
-  // const res = await fetch(`${server}/api/items/category`);
-  // const resTypes = await fetch(`${server}/api/items/type`);
-  // const resItems = await fetch(`${server}/api/items`);
-  // const dataTypes: string[] = await resTypes.json();
-  // const data: Product = await res.json();
-  // const dataItems: Product[] = await resItems.json();
-
   const data = [...new Set(db.map((item) => item.category))];
   const dataTypes = [...new Set(db.map((item) => item.type))];
   const dataItems = db;

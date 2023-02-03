@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
           <div className="my-5" />
           <Link href="/shop/">
-            <motion.p className="flex justify-center w-full place-items-center text-white underline mt-5 text-sm font-normal cursor-pointer">
+            <motion.p className="flex mt-5 w-fit items-center px-5 bg-cusblack overflow-hidden py-4 text-white rounded-lg text-sm active:bg-gray-800 duration-100">
               Shop Now
               <span>
                 <svg
