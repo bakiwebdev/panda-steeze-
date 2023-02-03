@@ -66,14 +66,17 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
   const dispatch = useDispatch();
   const wishListSlug = useSelector(selectWishItems);
   const basketItems: BasketItem[] = useSelector(selectItems);
-  const [isOnWishList, setIsOnWishList] = useState<boolean>(
-    wishListSlug.includes(data.slug)
-  );
-  const [isOnBasketList, setIsOnBasketList] = useState<boolean>(
-    basketItems.filter((item) => item.slug === data.slug).length > 0
-  );
+  const [isOnWishList, setIsOnWishList] = useState<boolean>(false);
+  const [isOnBasketList, setIsOnBasketList] = useState<boolean>(false);
   const [dataItem, setDataItem] = useState<Product>();
   const [imgSelected, setImgSelected] = useState(0);
+
+  useEffect(() => {
+    setIsOnWishList(wishListSlug.includes(data.slug));
+    setIsOnBasketList(
+      basketItems.filter((item) => item.slug === data.slug).length > 0
+    );
+  }, []);
 
   useEffect(() => {
     if (data) {

@@ -62,7 +62,9 @@ const ProductCard = ({ item, onWishList = false }: ProductCardProps) => {
         )}
       </motion.div>
       <Link href={`/product/${item.slug}`}>
-        <h3 className="mt-4 text-sm text-gray-700">{item.name}</h3>
+        <h3 className="mt-4 text-sm text-gray-700 text-ellipsis whitespace-nowrap overflow-hidden">
+          {item.name}
+        </h3>
         <h4 className="sr-only">Available colors</h4>
         {item.colors && (
           <ul

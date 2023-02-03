@@ -53,64 +53,65 @@ const Basket = () => {
                 </div>
               </div>
             </div>
-
-            <div className="mt-10 md:mt-0 col-span-1">
-              <div className="rounded-xl bg-white shadow-lg py-6 px-5">
-                <h1 className="text-cusblack font-bold text-md">SUMMARY</h1>
-                <div className="mt-4"></div>
-                <div className="text-sm pt-1 font-semibold pb-2 border-b border-cusblack flex justify-between place-items-center">
-                  <p className="">SUBTOTAL</p>
-                </div>
-
-                <div className="my-3 border-b border-cusblack pb-2">
-                  {items.map((item) => (
-                    <div
-                      key={item.slug}
-                      className="flex justify-between place-items-center text-sm mb-1"
-                    >
-                      <p className="pr-3">{item.name}</p>
-                      <p>
-                        {item.price} x {item.quantity}
-                      </p>
-                    </div>
-                  ))}
-                  <div className="my-3 border-b border-cusblack pb-2"></div>
-                  <div className="flex justify-between place-items-center text-sm mb-1">
-                    <p>TAX</p>
-                    <p>FREE</p>
+            {items.length > 0 && (
+              <div className="mt-10 md:mt-0 col-span-1">
+                <div className="rounded-xl bg-white shadow-lg py-6 px-5">
+                  <h1 className="text-cusblack font-bold text-md">SUMMARY</h1>
+                  <div className="mt-4"></div>
+                  <div className="text-sm pt-1 font-semibold pb-2 border-b border-cusblack flex justify-between place-items-center">
+                    <p className="">SUBTOTAL</p>
                   </div>
-                </div>
 
-                <div className="flex justify-between place-items-center font-semibold">
-                  <p>TOTAL</p>
-                  <p>$120</p>
-                </div>
+                  <div className="my-3 border-b border-cusblack pb-2">
+                    {items.map((item) => (
+                      <div
+                        key={item.slug}
+                        className="flex justify-between place-items-center text-sm mb-1"
+                      >
+                        <p className="pr-3">{item.name}</p>
+                        <p>
+                          {item.price} x {item.quantity}
+                        </p>
+                      </div>
+                    ))}
+                    <div className="my-3 border-b border-cusblack pb-2"></div>
+                    <div className="flex justify-between place-items-center text-sm mb-1">
+                      <p>TAX</p>
+                      <p>FREE</p>
+                    </div>
+                  </div>
 
-                <button
-                  disabled={!items.length}
-                  onClick={createCheckoutSession}
-                  className="py-2 px-3 disabled:cursor-not-allowed text-white w-full mt-6 rounded-lg bg-cusblack "
-                >
-                  <span className="flex justify-center place-items-center">
-                    CHECKOUT
-                    <svg
-                      className="ml-2 w-4 h-4 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                      />
-                    </svg>
-                  </span>
-                </button>
+                  <div className="flex justify-between place-items-center font-semibold">
+                    <p>TOTAL</p>
+                    <p>$120</p>
+                  </div>
+
+                  <button
+                    disabled={!items.length}
+                    onClick={createCheckoutSession}
+                    className="py-2 px-3 disabled:cursor-not-allowed text-white w-full mt-6 rounded-lg bg-cusblack "
+                  >
+                    <span className="flex justify-center place-items-center">
+                      CHECKOUT
+                      <svg
+                        className="ml-2 w-4 h-4 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
