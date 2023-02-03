@@ -8,7 +8,7 @@ interface Product {
   name: string;
   slug: string;
   colors: AvailableColors[];
-  price: string;
+  price: number;
   category: string;
   type: string;
   images: string[];

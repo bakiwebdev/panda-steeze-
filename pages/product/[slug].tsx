@@ -19,6 +19,7 @@ import {
   selectItems,
   removeFromBasket,
 } from '../../store/slices/basketSlice';
+import { NumericFormat } from 'react-number-format';
 
 export async function getStaticProps({ params }: any) {
   const { slug } = params;
@@ -167,9 +168,21 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
                 {dataItem && dataItem.name}
               </h1>
               {/* <p className="text-sm text-gray-400">{dataItem.color}</p> */}
-              <p className="my-3 font-semibold text-lg text-cusblack">
-                {dataItem?.price}
-              </p>
+              <NumericFormat
+                value={dataItem?.price}
+                className="font-semibold text-cusblack text-right"
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+                renderText={(value: any, props: any) => (
+                  <h1
+                    className="my-3 font-semibold text-lg text-cusblack"
+                    {...props}
+                  >
+                    {value}
+                  </h1>
+                )}
+              />
               {/* <div className="sizes text-sm text-gray-400">
                 <p className="mb-2">Select size</p>
                 <div className="flex">

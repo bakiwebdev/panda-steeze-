@@ -10,6 +10,7 @@ import { HeartIcon } from '@heroicons/react/24/outline';
 import { HeartIcon as HeartIconSolid } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 import { selectWishItems } from '../store/slices/wishlistSlice';
+import { NumericFormat } from 'react-number-format';
 
 interface ProductCardProps {
   item: Product;
@@ -83,7 +84,20 @@ const ProductCard = ({ item, onWishList = false }: ProductCardProps) => {
           </ul>
         )}
         {!onWishList && (
-          <p className="mt-1 text-lg font-medium text-gray-900">{item.price}</p>
+          <NumericFormat
+            value={item.price}
+            displayType={'text'}
+            thousandSeparator={true}
+            prefix={'$'}
+            renderText={(value: any, props: any) => (
+              <h1
+                className="mt-1 text-lg font-semibold text-cusblack "
+                {...props}
+              >
+                {value}
+              </h1>
+            )}
+          />
         )}
       </Link>
       {onWishList && (

@@ -4,16 +4,21 @@ import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import BasketProduct from '../components/BasketProduct';
 import { BasketItem, selectItems } from '../store/slices/basketSlice';
+import { NumericFormat } from 'react-number-format';
 
 const Basket = () => {
   const basketItems = useSelector(selectItems);
   const [items, setItems] = useState<BasketItem[]>([]);
+  const [totalPrice, setTotalPrice] = useState<number>(0);
   const createCheckoutSession = async () => {
     alert('Checking out is not available, please try later!');
   };
 
   useEffect(() => {
     setItems(basketItems);
+    setTotalPrice(
+      items.reduce((acc, item) => acc + item.price * item.quantity, 0)
+    );
   }, [basketItems]);
 
   return (
@@ -70,7 +75,22 @@ const Basket = () => {
                       >
                         <p className="pr-3">{item.name}</p>
                         <p>
-                          {item.price} x {item.quantity}
+                          <NumericFormat
+                            value={item.price}
+                            className="font-semibold text-cusblack text-right"
+                            displayType={'text'}
+                            thousandSeparator={true}
+                            prefix={'$'}
+                            renderText={(value: any, props: any) => (
+                              <h1
+                                className="font-semibold text-cusblack text-right"
+                                {...props}
+                              >
+                                {value}
+                              </h1>
+                            )}
+                          />{' '}
+                          x {item.quantity}
                         </p>
                       </div>
                     ))}
@@ -83,7 +103,12 @@ const Basket = () => {
 
                   <div className="flex justify-between place-items-center font-semibold">
                     <p>TOTAL</p>
-                    <p>$120</p>
+                    <NumericFormat
+                      value={totalPrice}
+                      displayType={'text'}
+                      thousandSeparator={true}
+                      prefix={'$'}
+                    />
                   </div>
 
                   <button

@@ -6,6 +6,7 @@ import {
   minusItem,
   BasketItem,
 } from '../store/slices/basketSlice';
+import { NumericFormat } from 'react-number-format';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -46,7 +47,7 @@ const BasketProduct = ({ item }: BasketProductProps) => {
         </div>
       </Link>
       <div className="flex flex-col justify-between py-1">
-        {/* <NumberFormat
+        <NumericFormat
           value={item.price}
           className="font-semibold text-cusblack text-right"
           displayType={'text'}
@@ -57,8 +58,7 @@ const BasketProduct = ({ item }: BasketProductProps) => {
               {value}
             </h1>
           )}
-        /> */}
-        <h1 className="font-semibold text-cusblack text-right">{item.price}</h1>
+        />
         <div className="flex ml-auto text-cusblack mt-1 md:mt-0">
           <button
             onClick={() => {
