@@ -10,6 +10,22 @@
         "id": "61190d98cd0bde22e8960772",
         "category": "Nike",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6511_ck9czw.jpg"
         ],
@@ -39,6 +55,22 @@
         "id": "abcdefghijklmnop",
         "category": "Puma",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6508_h4uzpp.jpg"
         ],
@@ -68,6 +100,22 @@
         "id": "1a2b3c4d5e6f7g8h9i",
         "category": "Puma",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6514_ipnnwn.jpg"
         ],
@@ -93,6 +141,22 @@
         "id": "abc123def456ghi789",
         "category": "Reebok",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6557_ylxnyh.jpg"
         ],
@@ -118,6 +182,22 @@
         "id": "zyxwvutsrqponmlkjihgfedcba",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6525_jqjash.jpg"
         ],
@@ -143,6 +223,22 @@
         "id": "jklmnopqrstuvwxyz",
         "category": "Converse",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026370/Panda%20Steeze/IMG_6513_uye5l0.jpg"
         ],
@@ -168,6 +264,22 @@
         "id": "9i8h7g6f5e4d3c2b1a",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6563_ikfooq.jpg"
         ],
@@ -193,6 +305,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6566_fjwves.jpg",
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6560_dmxcbm.jpg",
@@ -229,6 +357,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6919_dkflru.jpg"
         ],
@@ -262,6 +406,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026369/Panda%20Steeze/IMG_6922_gls7ft.jpg"
         ],
@@ -295,6 +455,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6488_zbdcor.jpg"
         ],
@@ -328,6 +504,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6487_ptjbr3.jpg"
         ],
@@ -361,6 +553,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6920_rita6c.jpg"
         ],
@@ -394,6 +602,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6486_q5ktrr.jpg"
         ],
@@ -427,6 +651,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6926_stucas.jpg"
         ],
@@ -460,6 +700,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6493_tghj5q.jpg"
         ],
@@ -493,6 +749,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6510_t09w71.jpg"
         ],
@@ -526,6 +798,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6492_lqohrs.jpg"
         ],
@@ -559,6 +847,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1675026368/Panda%20Steeze/IMG_6492_lqohrs.jpg"
         ],
@@ -592,6 +896,22 @@
         "id": "0a1b2c3d4e5f6g7h8i9j",
         "category": "Under Armour",
         "type": "T-Shirt",
+        "sizes": [{
+            "name": "Small",
+            "size": "S"
+        }, {
+            "name": "Medium",
+            "size": "M"
+        }, {
+            "name": "Large",
+            "size": "L"
+        }, {
+            "name": "Extra Large",
+            "size": "XL"
+        }, {
+            "name": "2X Large",
+            "size": "2XL"
+        }],
         "images": [
             "https://res.cloudinary.com/dcmvndqd1/image/upload/v1674040154/Panda%20Steeze/WhatsApp_Image_2022-07-12_at_17.53.40_iodmml.jpg"
         ],

@@ -71,6 +71,8 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
   const [isOnBasketList, setIsOnBasketList] = useState<boolean>(false);
   const [dataItem, setDataItem] = useState<Product>();
   const [imgSelected, setImgSelected] = useState(0);
+  const [selectedSize, setSelectedSize] = useState(0);
+  const [selectedColor, setSelectedColor] = useState(0);
 
   useEffect(() => {
     setIsOnWishList(wishListSlug.includes(data.slug));
@@ -167,10 +169,9 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
               <h1 className="text-3xl text-cusblack font-medium my-3">
                 {dataItem && dataItem.name}
               </h1>
-              {/* <p className="text-sm text-gray-400">{dataItem.color}</p> */}
               <NumericFormat
                 value={dataItem?.price}
-                className="font-semibold text-cusblack text-right"
+                className="font-semibold text-cusblack text-left"
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
@@ -183,10 +184,10 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
                   </h1>
                 )}
               />
-              {/* <div className="sizes text-sm text-gray-400">
+              <div className="mt-2 sizes text-sm text-gray-400">
                 <p className="mb-2">Select size</p>
                 <div className="flex">
-                  {dataItem.prop[0].size.map((size, idx) => (
+                  {dataItem?.sizes.map((size, idx) => (
                     <button
                       onClick={() => setSelectedSize(idx)}
                       key={idx}
@@ -194,13 +195,30 @@ const ProductDetail = ({ data, dataAlso }: ProductDetailProps) => {
                         selectedSize === idx
                           ? `bg-cusblack text-white`
                           : `text-cusblack border border-cusblack`
-                      } mr-2 duration-200 flex place-items-center justify-center rounded-full w-12 h-12 cursor-pointer hover:bg-cusblack hover:text-white`}
+                      } mr-2 duration-200 flex place-items-center justify-center rounded-full w-8 h-8 cursor-pointer hover:bg-cusblack hover:text-white`}
                     >
-                      {size}
+                      {size.size}
                     </button>
                   ))}
                 </div>
-              </div> */}
+              </div>
+              <div className="mt-2 sizes text-sm text-gray-400">
+                <p className="mb-2">Select color</p>
+                <div className="flex">
+                  {dataItem?.colors.map((color, idx) => (
+                    <button
+                      onClick={() => setSelectedColor(idx)}
+                      key={idx}
+                      className={`${
+                        selectedColor === idx
+                          ? `border-2 border-cusblack`
+                          : `border-none`
+                      } mr-2 duration-200 flex place-items-center justify-center rounded-full w-8 h-8 cursor-pointer hover:bg-cusblack hover:text-white`}
+                      style={{ backgroundColor: color.colorBg }}
+                    />
+                  ))}
+                </div>
+              </div>
               <div className="buttoncart flex mt-5 w-full">
                 <button
                   onClick={() => {
