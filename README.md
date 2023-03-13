@@ -77,4 +77,4 @@ Open your web browser and navigate to http://localhost:3000 to access the Panda 
 We welcome contributions to our project! If you'd like to contribute, please fork this repository and submit a pull request with your changes.
 License
 
-This project is licensed under the MIT License.
+This project is extended from [wefootware](https://github.com/mudzikalfahri/wefootwear-store) and licensed under the MIT License.
