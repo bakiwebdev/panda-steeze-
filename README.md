@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+# Panda Steeze
+
+Welcome to Panda Steeze, an e-commerce website that offers a wide selection of trendy t-shirts and hoodies for sale. Our site is built with Next.js, Tailwind CSS, Framer Motion for animation, Next API, Headless UI, and Hero Icons.
+
+## Pages
+
+Our website features the following pages:
+
+- Home: A landing page that showcases our latest products and promotions.
+- About: A page that provides information about our brand, mission, and values.
+- Basket: A shopping cart page where customers can view their selected items and proceed to checkout.
+- Wishlist: A page where customers can save items they're interested in purchasing at a later time.
+- Shop: A page that displays all of our products and allows customers to filter by category, size, and color.
+- Product: A page that displays detailed information about a specific product.
+- Product Detail (PDP): A page that allows customers to view multiple images of a product, choose the size and color, and add it to their cart.
+
+## Technology Used
+
+Our website is built with the following technologies:
+
+- Next.js: A React-based framework that allows for server-side rendering and optimized performance.
+- Tailwind CSS: A utility-first CSS framework that enables rapid UI development.
+- Framer Motion: A motion library for React that allows for easy and customizable animations.
+- Next API: A serverless API solution that allows for rapid and flexible development.
+- Headless UI: A set of completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
+- Hero Icons: A set of open-source icons designed for use with Tailwind CSS.
+
+## Features
+
+Our project includes several features that you can contribute to, including:
+
+- Responsive design
+- Dynamic grid layout
+- Trending item recommendations
+- Add to basket functionality
+- Size and color selection
+- Wishlist functionality
+- Checkout process
+
+## Installation
+
+To install and run Panda Steeze on your local machine, follow these steps:
+
+Clone this repository to your local machine using the following command:
+
+```
+git clone https://github.com/your-username/panda-steeze.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project directory using the following command:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+cd panda-steeze
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Install the necessary dependencies using the following command:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Start the development server using the following command:
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open your web browser and navigate to http://localhost:3000 to access the Panda Steeze website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions to our project! If you'd like to contribute, please fork this repository and submit a pull request with your changes.
+License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License.
