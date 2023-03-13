@@ -1,5 +1,5 @@
 
-⭐ leave a star, if you find it usefull ⭐
+⭐ Leave a star if you find it useful. ⭐
 
 # Panda Steeze
 
