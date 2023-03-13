@@ -5,6 +5,10 @@
 
 Welcome to Panda Steeze, an e-commerce website that offers a wide selection of trendy t-shirts and hoodies for sale. Our site is built with Next.js, Tailwind CSS, Framer Motion for animation, Next API, Headless UI, and Hero Icons.
 
+![image](https://user-images.githubusercontent.com/57604289/224721514-67f42307-785c-4ba3-9dbb-32c9c2f04900.png)
+![image](https://user-images.githubusercontent.com/57604289/224721587-8a96402a-2c69-4298-a0d4-07a8d04b8fb3.png)
+
+
 ## Pages
 
 Our website features the following pages:
